@@ -1,0 +1,148 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: large;
+  font-family: 'Lato', sans-serif;
+  
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  min-height: 657px;
+  background: url(/img/background-sitecard.jpg);
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+}
+
+.cards__single {
+  display: flex;
+  position: relative;
+  width: 30rem;
+  height: 270px;
+  border-radius: 15px;
+  background-color: rgb(92, 3, 114);
+  color: #fff;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.6);
+  cursor: pointer;
+  -webkit-transition: transform 0.6s;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+  -webkit-transition: 0.5s;
+  position: relative;
+  transition: transform 0.6s;
+  -webkit-transition: transform 0.6s;
+}
+
+.card-conteudo {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 25px;
+}
+
+.card-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: rgb(97, 5, 120);
+  color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  margin: 1rem;
+}
+.group input {
+  display: flex;
+  width: 20rem;
+  height: 30px;
+  border: none;
+  border-radius: 0.3rem;
+  margin: 0.3rem;
+}
+
+#inputCvv {
+  width: 100px;
+  text-align: center;
+}
+
+.btn {
+  padding: 5px 35px 1px 40px;
+  border-radius: 0.3rem;
+  border: none;
+  background-color: rgb(8, 179, 241);
+  margin-top: 10px;
+  text-align: center;
+}
+
+.group label {
+ margin: 0.4rem;
+}
+
+.logo {
+  margin: 10px;
+  margin-left: 24rem;
+  text-align: right;
+  min-height: 55px;
+}
+
+.logo img {
+  
+  max-width: 55px;
+}
+
+.esp {
+  margin-left: 1.5rem;
+}
+
+.date {
+  display: flex;
+}
+
+.chip {
+  width: 3rem;
+  margin: 10px;
+}
+
+.cards__single.flip {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+}
+.cards__front,
+.cards__back {
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.cards__front {
+  transform: rotateX(0deg);
+  -webkit-transform: rotateX(0deg);
+}
+
+.cards__back {
+  transform: rotateY(180deg);
+  -webkit-transform: rotateY(180deg);
+  position: absolute;
+  right: 0;
+  left: 0;
+  top: 15px;
+}
+
+.back {
+  padding: 0.5rem;
+  background-color: rgb(150, 146, 146);
+  color: #000;
+  text-align: right;
+}
+
+
+ label {
+  margin-top: 1rem;
+  color: rgb(210, 215, 221);
+}

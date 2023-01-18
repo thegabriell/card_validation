@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+    <title>Card</title>
+    <link rel="stylesheet" href="/card/style.css">
+</head>
+<body>
+    <div class="container">
+        <section class="card" id="card">
+            <form action="" class="card-form" id="card-form">
+                <div class="group">
+                    <label for="">Cartão</label>
+                    <input type="text" id="inputNumber" maxlength="19">
+                    <label for="">Nome do Cartão</label>
+                    <input type="text" id="inputName">
+                    <label for="">CVV</label>
+                    <input type="text" id="inputCvv" maxlength="3">
+                    <div class="date">
+                        <select name="month" id="selectMonth">
+                            <option disabled selected>Mês</option>
+                        </select>
+                        <div class="date">
+                            <select name="year" id="selectYear">
+                                <option disabled selected>Ano</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="b">
+                        <button class="btn" type="submit">Enviar</button>
+                    </div>
+                </div>
+            </form>
+            <div class="cards__single">
+                <div class="cards__front">
+                    <div class="card-validaçao">
+                        <div class="esp">
+                            <div class="logo" id="logo">
+                            </div>
+                            <img src="/img/chip.png" class="chip">
+                            <div class="ig">
+                                <label for="">Número</label>
+                                <p class="Number">#### #### #### ####</p>
+                            </div>
+                        </div>
+                        <div class="card-conteudo">
+                            <div class="ex">
+                                <label for="">Nome</label>
+                                <p class="name">José da Silva Rodrigues</p>
+                            </div>
+                            <div class="ex">
+                                <div class="l">
+                                    <label for="">Validade</label>
+                                </div>
+                                <span class="month">MM </span> /
+                                <span class="year">AA</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cards__back">
+                    <div class="back">
+                        <label for="">Código de Segurança</label>
+                        <p class="CVV"></p>
+                    </div>
+
+
+
+                    <script src="/card/card-validaçao.js"></script>
+</body>
+
+</html>
