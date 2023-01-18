@@ -41,13 +41,13 @@ if(inputValue == ''){
 if(inputValue == 5){
     lg.innerHTML = '';
     const img = document.createElement('img');
-    img.src = '/img/logo-mastercard.png';
+    img.src = '/card/img/logo-mastercard.png';
     lg.appendChild(img);
 }
 else if(inputValue == 4){
     lg.innerHTML = '';
     const img = document.createElement('img');
-    img.src = '/img/logo-visa.png';
+    img.src = '/card/img/logo-visa.png';
     lg.appendChild(img);
 }
 })
